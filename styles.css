@@ -1,0 +1,13 @@
+body {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.exercise-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.exercise-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 1.25rem 3rem rgba(15, 23, 42, 0.12);
+}

@@ -1,0 +1,42 @@
+body {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.columna-kanban {
+  min-height: 320px;
+  padding: 16px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.columna-kanban h2 {
+  margin-bottom: 4px;
+  letter-spacing: 0.08em;
+  color: #495057;
+}
+
+.tarea {
+  padding: 12px 14px;
+  border-radius: 8px;
+  background-color: #e9f3ff;
+  border: 1px solid #cfe2ff;
+  color: #0d6efd;
+  cursor: grab;
+  user-select: none;
+  font-weight: 500;
+}
+
+.tarea:active {
+  cursor: grabbing;
+}
+
+.columna-kanban.arrastrando-encima {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.15);
+}
