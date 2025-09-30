@@ -2,17 +2,17 @@ const validadores = {
   telefono: {
     regla: /^\d{10}$/,
     mensajeOk: "Telefono valido.",
-  
+    mensajeError: "Escribe exactamente 10 digitos sin espacios ni guiones."
   },
   url: {
     regla: /^https?:\/\/[a-zA-Z0-9.-]+\.[a-z]{2,}$/,
     mensajeOk: "URL valida.",
-   
+    mensajeError: "Incluye http(s) y un dominio valido."
   },
-  contraseña: {
+  contrasena: {
     regla: /^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/,
-    mensajeOk: "Contraseña valida.",
-   
+    mensajeOk: "Contrasena valida.",
+    mensajeError: "Minimo 8 caracteres, una mayuscula y un numero."
   }
 };
 
@@ -53,7 +53,7 @@ function validarCampo(campo) {
 
 document.addEventListener("DOMContentLoaded", function () {
   const campos = document.querySelectorAll("[data-validate]");
-  const formulario = document.getElementById("regla-form");
+  const formulario = document.getElementById("regex-form");
 
   campos.forEach(function (campo) {
     campo.addEventListener("input", function () {
